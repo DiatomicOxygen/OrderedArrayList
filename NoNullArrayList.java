@@ -10,4 +10,12 @@ public class NoNullArrayList<T> extends ArrayList<T> {
     super(x);
   }
 
+  public boolean add(T x) throws IllegalArgumentException {
+    if (x != null) {
+      super.add(x);
+      return true;
+    } else {
+      throw new IllegalArgumentException();
+    }
+  }
 }
