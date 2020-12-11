@@ -14,7 +14,7 @@ public class OrderedArrayList<T extends Comparable<T>> extends NoNullArrayList<T
         return i;
       }
     }
-    return size() - 1;
+    return size();
   }
 
   public boolean add(T value) {
