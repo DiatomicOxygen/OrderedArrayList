@@ -8,3 +8,5 @@ For the first add method, we decided that we would use a helper method which wou
 For the set method, we decided that it would just delete the item at that index (by calling the super.remove(index)) and then we would just call the add method we devised above to add the new value.
 We also decided that the constructors would be not much different from the super constructor because it will start at size 0 (since there are no terms) and we won't have to sort anything in the constructor.
 We decided that we would use the super methods in all of the add and set methods. We mainly said that we would use super.add and super.remove.
+
+*UPDATE: super.remove() can just be replaced by remove() because it is not changed.
