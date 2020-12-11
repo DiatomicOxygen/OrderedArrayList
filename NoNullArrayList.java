@@ -26,4 +26,12 @@ public class NoNullArrayList<T> extends ArrayList<T> {
       throw new IllegalArgumentException();
     }
   }
+
+  public T set(int index, T value) throws IllegalArgumentException {
+    if (value != null) {
+      return super.set(index, value);
+    } else {
+      throw new IllegalArgumentException();
+    }
+  }
 }
