@@ -8,7 +8,7 @@ public class OrderedArrayList<T extends Comparable<T>> extends NoNullArrayList<T
     super(x);
   }
 
-  public int sorter(T value) {
+  private int sorter(T value) {
     if (value == null) {
       throw new IllegalArgumentException();
     }
